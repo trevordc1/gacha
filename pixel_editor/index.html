@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamagotchi Creator - Pixel Art Editor</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div class="container">
+        <h1>🎮 Tamagotchi Creator - Pixel Art Editor</h1>
+        <p class="info">Click and drag to draw pixels, or click individual squares. Create your custom tamagotchi!</p>
+        
+        <div class="controls">
+            <div class="color-palette" id="colorPalette">
+                <!-- Colors will be added by JavaScript -->
+            </div>
+            
+            <div class="tools">
+                <button id="drawTool" class="active">Draw</button>
+                <button id="eraseTool">Erase</button>
+                <button id="clearBtn">Clear All</button>
+            </div>
+            
+            <div class="grid-size-control">
+                <label for="gridSize">Grid Size:</label>
+                <select id="gridSize">
+                    <option value="16">16x16</option>
+                    <option value="24" selected>24x24</option>
+                    <option value="32">32x32</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <div id="pixelCanvas"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="saveBtn">Save Design</button>
+            <button id="loadBtn">Load Example</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
